@@ -101,10 +101,6 @@ def predict(X, w, b):
     predictions = (probabilities >= 0.5).astype(int)
     return predictions.flatten()
 
-# Assuming you have new data X_new, you can use the predict function like this:
-# predictions = predict(X_new, w, b)
-# Assuming you have trained the model and obtained the optimized parameters w and b
-# Let's create a new example data point
 X_new = np.array([[0.5, 0.5]])
 
 # Predict the output for the new example
